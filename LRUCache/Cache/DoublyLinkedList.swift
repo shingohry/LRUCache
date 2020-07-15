@@ -1,5 +1,5 @@
 //
-//  DoublyLlinkedList.swift
+//  DoublyLinkedList.swift
 //  LRUCache
 //
 //  Created by Shingo Hiraya on 2020/07/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DoublyLlinkedList<T, Key: Hashable> {
+class DoublyLinkedList<T, Key: Hashable> {
     var head: Node<T, Key>?
     var tail: Node<T, Key>?
     var size = 0
