@@ -8,8 +8,12 @@
 
 import Foundation
 
-class DoublyLinkedList<T, Key: Hashable> {
+class DoublyLinkedList<T: Equatable, Key: Hashable> {
     var head: Node<T, Key>?
     var tail: Node<T, Key>?
-    var size = 0
+    var size = 0 {
+        didSet {
+            print(#function, "size: \(size)")
+        }
+    }
 }

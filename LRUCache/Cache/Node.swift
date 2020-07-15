@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Node<T, Key: Hashable> {
+class Node<T: Equatable, Key: Hashable> {
     var prev: Node?
     var next: Node?
     var value: T
@@ -17,5 +17,15 @@ class Node<T, Key: Hashable> {
     init(value: T, key: Key) {
         self.value = value
         self.key = key
+    }
+
+    deinit {
+        print(#function, "deinit node for \(key)")
+    }
+}
+
+extension Node: Equatable {
+    static func == (lhs: Node<T, Key>, rhs: Node<T, Key>) -> Bool {
+        return lhs.value == rhs.value
     }
 }
