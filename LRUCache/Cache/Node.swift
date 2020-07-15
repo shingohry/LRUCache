@@ -8,12 +8,14 @@
 
 import Foundation
 
-class Node<T> {
+class Node<T, Key: Hashable> {
     var prev: Node?
     var next: Node?
     var value: T
+    var key: Key
 
-    init(value: T) {
+    init(value: T, key: Key) {
         self.value = value
+        self.key = key
     }
 }

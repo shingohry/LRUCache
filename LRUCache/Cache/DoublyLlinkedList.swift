@@ -8,8 +8,8 @@
 
 import Foundation
 
-class DoublyLlinkedList<T> {
-    var head: Node<T>?
-    var tail: Node<T>?
+class DoublyLlinkedList<T, Key: Hashable> {
+    var head: Node<T, Key>?
+    var tail: Node<T, Key>?
     var size = 0
 }
