@@ -11,7 +11,7 @@ import Foundation
 class LRUCache<T: Equatable, Key: Hashable> {
     private var list = DoublyLinkedList<T, Key>()
     private var map = [Key: Node<T, Key>]()
-    private let maxSize = 10
+    private let maxCount = 10
 
     subscript(key: Key) -> T? {
         get {
@@ -43,7 +43,7 @@ private extension LRUCache {
             return
         }
 
-        if list.size == maxSize {
+        if map.count == maxCount {
             // キャッシュが満杯の場合は末尾のNodeを削除する
             removeLast()
         }
@@ -72,9 +72,8 @@ private extension LRUCache {
         }
         node.prev?.next = node.next
         node.next?.prev = node.prev
-        list.size -= 1
         map[node.key] = nil
-        print(#function, "remove node for \(node.key)")
+        print(#function, "remove node for \(node.key), map.count: \(map.count)")
     }
 
     // 先頭にNodeを追加する
@@ -82,8 +81,7 @@ private extension LRUCache {
         node.next = list.head
         list.head?.prev = node
         list.head = node
-        list.size += 1
         map[node.key] = node
-        print(#function, "insert to head node for \(node.key)")
+        print(#function, "insert to head node for \(node.key), map.count: \(map.count)")
     }
 }
