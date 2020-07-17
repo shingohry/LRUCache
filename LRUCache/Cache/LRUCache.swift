@@ -13,6 +13,10 @@ class LRUCache<T: Equatable, Key: Hashable> {
     private var map = [Key: Node<T, Key>]()
     private let maxCount = 10
 
+    var count: Int {
+        return map.count
+    }
+
     subscript(key: Key) -> T? {
         get {
             return get(key: key)
@@ -82,6 +86,11 @@ private extension LRUCache {
         list.head?.prev = node
         list.head = node
         map[node.key] = node
+
+        if list.tail == nil {
+            list.tail = list.head
+        }
+
         print(#function, "insert to head node for \(node.key), map.count: \(map.count)")
     }
 }
