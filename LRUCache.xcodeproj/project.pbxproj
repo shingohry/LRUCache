@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C91EA04B24C1B39E00D35D36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EA04A24C1B39E00D35D36 /* DetailViewController.swift */; };
 		C91EA05324C2E66B00D35D36 /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EA05224C2E66B00D35D36 /* LRUCacheTests.swift */; };
+		C91EA05B24C2F7FA00D35D36 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C91EA05A24C2F7F900D35D36 /* README.md */; };
 		C97A370224BF548900ED7148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370124BF548900ED7148 /* AppDelegate.swift */; };
 		C97A370424BF548900ED7148 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370324BF548900ED7148 /* SceneDelegate.swift */; };
 		C97A370624BF548900ED7148 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370524BF548900ED7148 /* TopViewController.swift */; };
@@ -35,6 +36,7 @@
 		C91EA05024C2E66B00D35D36 /* LRUCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRUCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91EA05224C2E66B00D35D36 /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
 		C91EA05424C2E66B00D35D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91EA05A24C2F7F900D35D36 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C97A36FE24BF548900ED7148 /* LRUCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRUCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A370124BF548900ED7148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97A370324BF548900ED7148 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		C97A36F524BF548900ED7148 = {
 			isa = PBXGroup;
 			children = (
+				C91EA05A24C2F7F900D35D36 /* README.md */,
 				C97A370024BF548900ED7148 /* LRUCache */,
 				C91EA05124C2E66B00D35D36 /* LRUCacheTests */,
 				C97A36FF24BF548900ED7148 /* Products */,
@@ -217,6 +220,7 @@
 			files = (
 				C97A370E24BF548A00ED7148 /* LaunchScreen.storyboard in Resources */,
 				C97A370B24BF548A00ED7148 /* Assets.xcassets in Resources */,
+				C91EA05B24C2F7FA00D35D36 /* README.md in Resources */,
 				C97A370924BF548900ED7148 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
