@@ -16,8 +16,10 @@ class LRUCache<T: Equatable, Key: Hashable> {
     // - get: O(1) (Dictionaryから値をO(1)で取得できるので)
     // - set: O(1) (値の書き換え、削除、追加がO(1)でできるので)
 
+    // DoublyLinkedListとDictionaryを組み合わせて、LRUCacheを実現する
     private var list = DoublyLinkedList<T, Key>()
     private var map = [Key: Node<T, Key>]()
+    
     private let maxCount = 10
     private let workQueue: DispatchQueue
 
