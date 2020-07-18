@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C91EA04B24C1B39E00D35D36 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EA04A24C1B39E00D35D36 /* DetailViewController.swift */; };
+		C91EA05324C2E66B00D35D36 /* LRUCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EA05224C2E66B00D35D36 /* LRUCacheTests.swift */; };
 		C97A370224BF548900ED7148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370124BF548900ED7148 /* AppDelegate.swift */; };
 		C97A370424BF548900ED7148 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370324BF548900ED7148 /* SceneDelegate.swift */; };
 		C97A370624BF548900ED7148 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A370524BF548900ED7148 /* TopViewController.swift */; };
@@ -19,8 +20,21 @@
 		C97A371D24BF5B6C00ED7148 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A371C24BF5B6C00ED7148 /* LRUCache.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C91EA05524C2E66B00D35D36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C97A36F624BF548900ED7148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97A36FD24BF548900ED7148;
+			remoteInfo = LRUCache;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C91EA04A24C1B39E00D35D36 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C91EA05024C2E66B00D35D36 /* LRUCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRUCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91EA05224C2E66B00D35D36 /* LRUCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTests.swift; sourceTree = "<group>"; };
+		C91EA05424C2E66B00D35D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97A36FE24BF548900ED7148 /* LRUCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRUCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A370124BF548900ED7148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97A370324BF548900ED7148 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C91EA04D24C2E66B00D35D36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C97A36FB24BF548900ED7148 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91EA05124C2E66B00D35D36 /* LRUCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				C91EA05224C2E66B00D35D36 /* LRUCacheTests.swift */,
+				C91EA05424C2E66B00D35D36 /* Info.plist */,
+			);
+			path = LRUCacheTests;
+			sourceTree = "<group>";
+		};
 		C97A36F524BF548900ED7148 = {
 			isa = PBXGroup;
 			children = (
 				C97A370024BF548900ED7148 /* LRUCache */,
+				C91EA05124C2E66B00D35D36 /* LRUCacheTests */,
 				C97A36FF24BF548900ED7148 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C97A36FE24BF548900ED7148 /* LRUCache.app */,
+				C91EA05024C2E66B00D35D36 /* LRUCacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +130,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C91EA04F24C2E66B00D35D36 /* LRUCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91EA05724C2E66B00D35D36 /* Build configuration list for PBXNativeTarget "LRUCacheTests" */;
+			buildPhases = (
+				C91EA04C24C2E66B00D35D36 /* Sources */,
+				C91EA04D24C2E66B00D35D36 /* Frameworks */,
+				C91EA04E24C2E66B00D35D36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91EA05624C2E66B00D35D36 /* PBXTargetDependency */,
+			);
+			name = LRUCacheTests;
+			productName = LRUCacheTests;
+			productReference = C91EA05024C2E66B00D35D36 /* LRUCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C97A36FD24BF548900ED7148 /* LRUCache */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97A371224BF548A00ED7148 /* Build configuration list for PBXNativeTarget "LRUCache" */;
@@ -121,10 +171,14 @@
 		C97A36F624BF548900ED7148 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Shingo Hiraya";
 				TargetAttributes = {
+					C91EA04F24C2E66B00D35D36 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C97A36FD24BF548900ED7148;
+					};
 					C97A36FD24BF548900ED7148 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -144,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				C97A36FD24BF548900ED7148 /* LRUCache */,
+				C91EA04F24C2E66B00D35D36 /* LRUCacheTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C91EA04E24C2E66B00D35D36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C97A36FC24BF548900ED7148 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +224,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C91EA04C24C2E66B00D35D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91EA05324C2E66B00D35D36 /* LRUCacheTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C97A36FA24BF548900ED7148 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +247,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C91EA05624C2E66B00D35D36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97A36FD24BF548900ED7148 /* LRUCache */;
+			targetProxy = C91EA05524C2E66B00D35D36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C97A370724BF548900ED7148 /* Main.storyboard */ = {
@@ -198,6 +276,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C91EA05824C2E66B00D35D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6USV66H63;
+				INFOPLIST_FILE = LRUCacheTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shingohry.LRUCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRUCache.app/LRUCache";
+			};
+			name = Debug;
+		};
+		C91EA05924C2E66B00D35D36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R6USV66H63;
+				INFOPLIST_FILE = LRUCacheTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shingohry.LRUCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRUCache.app/LRUCache";
+			};
+			name = Release;
+		};
 		C97A371024BF548A00ED7148 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -351,6 +471,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C91EA05724C2E66B00D35D36 /* Build configuration list for PBXNativeTarget "LRUCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91EA05824C2E66B00D35D36 /* Debug */,
+				C91EA05924C2E66B00D35D36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C97A36F924BF548900ED7148 /* Build configuration list for PBXProject "LRUCache" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
