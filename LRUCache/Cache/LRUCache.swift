@@ -19,6 +19,12 @@ class LRUCache<T: Equatable, Key: Hashable> {
     private var list = DoublyLinkedList<T, Key>()
     private var map = [Key: Node<T, Key>]()
     private let maxCount = 10
+    private let workQueue: DispatchQueue
+
+    init() {
+        // Serial queueを作成
+        self.workQueue = DispatchQueue(label: "LRUCache.workQueue")
+    }
 
     var count: Int {
         return map.count
@@ -26,11 +32,15 @@ class LRUCache<T: Equatable, Key: Hashable> {
 
     subscript(key: Key) -> T? {
         get {
-            return get(key: key)
+            workQueue.sync {
+                return get(key: key)
+            }
         }
         set {
             guard let value = newValue else { return }
-            set(key: key, value: value)
+            workQueue.sync {
+                set(key: key, value: value)
+            }
         }
     }
 }
