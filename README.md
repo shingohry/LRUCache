@@ -27,3 +27,5 @@
     - [スレッドセーフとは - IT用語辞典 e-Words](http://e-words.jp/w/%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E3%82%BB%E3%83%BC%E3%83%95.html)
     - [Swiftでマルチスレッドなコードを書くときのパターン - Qiita](https://qiita.com/omochimetaru/items/953bea70bb1667de4c49#%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E3%82%BB%E3%83%BC%E3%83%95%E5%BC%8F%E3%81%AE%E5%AE%9F%E8%A3%85)
     - [Marina Watanabe Profile - Wantedly](https://www.wantedly.com/users/17815523)
+- Data Structures & Algorithms
+    - [Data Structures & Algorithms in Swift | raywenderlich.com Store](https://store.raywenderlich.com/products/data-structures-and-algorithms-in-swift)
