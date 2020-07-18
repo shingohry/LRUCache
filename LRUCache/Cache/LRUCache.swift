@@ -9,6 +9,13 @@
 import Foundation
 
 class LRUCache<T: Equatable, Key: Hashable> {
+    // # 空間計算量
+    // - O(1) (最大要素数が固定なので。要素数が可変で数がkだとすると、o(k)。DictionaryとDoublyLinkedListのメモリ使用量は要素数に比例する)
+    //
+    // # 時間計算量
+    // - get: O(1) (Dictionaryから値をO(1)で取得できるので)
+    // - set: O(1) (値の書き換え、削除、追加がO(1)でできるので)
+
     private var list = DoublyLinkedList<T, Key>()
     private var map = [Key: Node<T, Key>]()
     private let maxCount = 10
